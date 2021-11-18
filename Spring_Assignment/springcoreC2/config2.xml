@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- This Is For 2ndq -->
+
+<bean name = "collectionlist" class="com.springcoreC2.Collection2">
+     <property name="QuestionId">
+     <set>
+                <value>1</value>
+               
+     </set>
+     </property>
+     
+     <property name="Questions">
+     <map>
+<entry key="question on java"  value="What is OOP?"/>
+             
+     
+     </map>
+     </property>
+     
+     <property name="Answers">
+         <list>
+         <value>OOP stands for Object-Oriented Programming.Procedural programming is about writing procedures or methods that perform operations on the data, while object-oriented programming is about creating objects that contain both data and methods.</value>
+                 </list>     
+     </property>
+     
+     </bean>
+     
+     
+     
+    </beans>

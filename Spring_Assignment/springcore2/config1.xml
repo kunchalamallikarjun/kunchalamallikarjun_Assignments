@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!-- This Is For 2ndq -->
+  <bean name = "collectionmap" class="com.springcore2.Collection">
+     <property name="QuestionId">
+     <list>
+                <value>1</value>
+               
+     </list>
+     </property>
+     
+     <property name="Questions">
+     <set>
+           <value>Why to use Java collection? </value>
+          
+     
+     </set>
+     </property>
+     
+     <property name="Answers">
+         <map>
+            <entry key="1"  value="Reducing the effort required to write the code by providing useful data structures and algorithms"/>
+             <entry  key="2" value="Java collections provide high-performance and high-quality data structures and algorithms thereby increasing the speed and quality"/>       
+         </map>     
+     </property>
+     
+     </bean>
+     
+     
+     
+    </beans>
