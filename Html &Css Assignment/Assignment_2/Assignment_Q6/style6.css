@@ -1,0 +1,9 @@
+table,td{
+    border:2px solid green;
+    border-collapse:separate;
+}
+td.header{
+   background-color: green;
+   color: white;
+  
+}
